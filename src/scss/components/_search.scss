@@ -1,0 +1,44 @@
+.search {
+  position: relative;
+  width: 555px;
+  height: 52px;
+
+  &__input {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 52px 15px 48px;
+    width: 100%;
+    height: 100%;
+    color: var(--text-color);
+    background-image: url("../img/location.svg");
+    background-position: left 14px center;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-color: var(--grey);
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: var(--text-color);
+    }
+  }
+
+  &__btn {
+    @include flex-all-center;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 52px;
+    height: 52px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: transparent;
+      stroke: var(--light-color);
+    }
+  }
+}

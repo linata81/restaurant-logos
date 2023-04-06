@@ -1,0 +1,41 @@
+.cart {
+  @include flex-all-sb;
+
+  border-radius: 10px;
+  padding: 18px 14px 17px 24px;
+  width: 149px;
+  max-height: 52px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--light-color);
+  background-color: var(--green);
+  cursor: pointer;
+
+  &__count {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 3px 6px 3px 5px;
+    min-width: 24px;
+    min-height: 24px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--dark-grey);
+    background-color: var(--light-color);
+
+    &::before {
+      @include pseudo;
+
+      position: absolute;
+      left: -12px;
+      top: -8px;
+      width: 1px;
+      height: 38px;
+      background-color: var(--light-color);
+    }
+  }
+}
